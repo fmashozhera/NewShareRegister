@@ -1,0 +1,12 @@
+C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Application\bin\Debug\net6.0\ShareRegister.Application.deps.json
+C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Application\bin\Debug\net6.0\ShareRegister.Application.dll
+C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Application\bin\Debug\net6.0\ShareRegister.Application.pdb
+C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Application\obj\Debug\net6.0\ShareRegister.Application.csproj.AssemblyReference.cache
+C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Application\obj\Debug\net6.0\ShareRegister.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Application\obj\Debug\net6.0\ShareRegister.Application.AssemblyInfoInputs.cache
+C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Application\obj\Debug\net6.0\ShareRegister.Application.AssemblyInfo.cs
+C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Application\obj\Debug\net6.0\ShareRegister.Application.csproj.CoreCompileInputs.cache
+C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Application\obj\Debug\net6.0\ShareRegister.Application.dll
+C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Application\obj\Debug\net6.0\refint\ShareRegister.Application.dll
+C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Application\obj\Debug\net6.0\ShareRegister.Application.pdb
+C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Application\obj\Debug\net6.0\ref\ShareRegister.Application.dll
