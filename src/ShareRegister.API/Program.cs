@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
+using ShareRegister.Application.Interfaces.Common;
 using ShareRegister.Data;
+using ShareRegister.Data.Common;
+using ShareRegister.Domain.Common;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +16,17 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("ShareRegister"));
 });
+builder.Services.AddScoped<IRepository<Company>, Repository<Company>>();
+builder.Services.AddScoped<IRepository<Address>, Repository<Address>>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWOrk>();
+builder.Services.AddMediatR((config) => {
+    config.RegisterServicesFromAssembly(typeof(ICommand).Assembly);
+});
+
+void action(MediatRServiceConfiguration obj)
+{
+    throw new NotImplementedException();
+}
 
 var app = builder.Build();
 

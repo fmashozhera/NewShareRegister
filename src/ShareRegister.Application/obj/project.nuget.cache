@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "kbbMT6MF3zZJKrvZYPqpBQcetxV9SaEK1Q6JHe4HhnkguAYTCO/B6czv4GcH7VRThBE9jp1qzGHmqnFjp25B/w==",
+  "dgSpecHash": "LstvlMnBIkUdl2tsReTHHqxL8XmtCdjNrCEuJzFW9T43yBMGip3y8rg3aka39wJzcJk6Y3xuoEG/IdUwj7oeLw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fungai\\source\\repos\\ShareReg\\ShareRegister\\ShareRegister.Application\\ShareRegister.Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\fluentresults\\3.15.2\\fluentresults.3.15.2.nupkg.sha512",
+    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
+    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
   "logs": []
 }

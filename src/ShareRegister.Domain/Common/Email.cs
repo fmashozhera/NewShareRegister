@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 namespace ShareRegister.Domain.Common;
 public class Email
 {
+    //public Guid Id { get; set; }
     public string Value { get; private set; }
 
     private Email(string value)

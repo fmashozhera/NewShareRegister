@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ShareRegister.API.props" />
+</Project>

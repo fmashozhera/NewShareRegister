@@ -10,13 +10,26 @@ internal class CompanyConfiguration : IEntityTypeConfiguration<Company>
         builder.HasKey(t => t.Id);
         builder.Property(p => p.Id)
             .ValueGeneratedNever();
-        builder.OwnsOne(t => t.Address);
+        
+        builder.OwnsOne(p => p.Address, p =>
+        {
+            p.Property(p => p.Street).HasColumnName("Street");
+            p.Property(p => p.Surburb).HasColumnName("Surburb");
+            p.Property(p => p.City).HasColumnName("City");
+            p.Property(p => p.Country).HasColumnName("Country");
+            p.Property(p => p.PostalCode).HasColumnName("PostalCode");
+        });
+
         builder.OwnsMany<TelephoneNumber>(t => t.TelephoneNumbers);
+        builder.OwnsOne(p => p.Email, p => { p.Property(p => p.Value).HasColumnName("Email"); });
 
         builder.Metadata.FindNavigation(nameof(Company.Address))
             .SetPropertyAccessMode(PropertyAccessMode.Field);
 
         builder.Metadata.FindNavigation(nameof(Company.TelephoneNumbers))
-            .SetPropertyAccessMode((PropertyAccessMode)PropertyAccessMode.Field);
+            .SetPropertyAccessMode(PropertyAccessMode.Field);
+
+        builder.Metadata.FindNavigation(nameof (Company.Email))
+            .SetPropertyAccessMode(PropertyAccessMode.Field);
     }
 }

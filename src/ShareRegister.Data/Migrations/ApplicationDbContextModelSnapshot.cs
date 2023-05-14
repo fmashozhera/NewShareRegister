@@ -22,39 +22,9 @@ namespace ShareRegister.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ShareRegister.Domain.Common.Address", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("City")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Country")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PostalCode")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Street")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Surburb")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Addresses");
-                });
-
             modelBuilder.Entity("ShareRegister.Domain.Common.Bank", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("AddressId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("BankCode")
@@ -77,18 +47,12 @@ namespace ShareRegister.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AddressId");
-
                     b.ToTable("Banks");
                 });
 
             modelBuilder.Entity("ShareRegister.Domain.Common.Company", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("AddressId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CompanyCode")
@@ -114,74 +78,155 @@ namespace ShareRegister.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AddressId");
-
                     b.ToTable("Companies");
                 });
 
-            modelBuilder.Entity("ShareRegister.Domain.Common.TelephoneNumber", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("BankId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("CompanyId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("TelephoneNumberType")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Value")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BankId");
-
-                    b.HasIndex("CompanyId");
-
-                    b.ToTable("TelephoneNumber");
-                });
-
             modelBuilder.Entity("ShareRegister.Domain.Common.Bank", b =>
                 {
-                    b.HasOne("ShareRegister.Domain.Common.Address", "Address")
-                        .WithMany()
-                        .HasForeignKey("AddressId");
+                    b.OwnsOne("ShareRegister.Domain.Common.Address", "Address", b1 =>
+                        {
+                            b1.Property<Guid>("BankId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<string>("City")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("City");
+
+                            b1.Property<string>("Country")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Country");
+
+                            b1.Property<string>("PostalCode")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("PostalCode");
+
+                            b1.Property<string>("Street")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Street");
+
+                            b1.Property<string>("Surburb")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Surburb");
+
+                            b1.HasKey("BankId");
+
+                            b1.ToTable("Banks");
+
+                            b1.WithOwner()
+                                .HasForeignKey("BankId");
+                        });
+
+                    b.OwnsMany("ShareRegister.Domain.Common.TelephoneNumber", "TelephoneNumbers", b1 =>
+                        {
+                            b1.Property<Guid>("BankId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<int>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("int");
+
+                            SqlServerPropertyBuilderExtensions.UseIdentityColumn(b1.Property<int>("Id"));
+
+                            b1.Property<int>("TelephoneNumberType")
+                                .HasColumnType("int");
+
+                            b1.Property<string>("Value")
+                                .HasColumnType("nvarchar(max)");
+
+                            b1.HasKey("BankId", "Id");
+
+                            b1.ToTable("Banks_TelephoneNumbers");
+
+                            b1.WithOwner()
+                                .HasForeignKey("BankId");
+                        });
 
                     b.Navigation("Address");
-                });
 
-            modelBuilder.Entity("ShareRegister.Domain.Common.Company", b =>
-                {
-                    b.HasOne("ShareRegister.Domain.Common.Address", "Address")
-                        .WithMany()
-                        .HasForeignKey("AddressId");
-
-                    b.Navigation("Address");
-                });
-
-            modelBuilder.Entity("ShareRegister.Domain.Common.TelephoneNumber", b =>
-                {
-                    b.HasOne("ShareRegister.Domain.Common.Bank", null)
-                        .WithMany("TelephoneNumbers")
-                        .HasForeignKey("BankId");
-
-                    b.HasOne("ShareRegister.Domain.Common.Company", null)
-                        .WithMany("TelephoneNumbers")
-                        .HasForeignKey("CompanyId");
-                });
-
-            modelBuilder.Entity("ShareRegister.Domain.Common.Bank", b =>
-                {
                     b.Navigation("TelephoneNumbers");
                 });
 
             modelBuilder.Entity("ShareRegister.Domain.Common.Company", b =>
                 {
+                    b.OwnsOne("ShareRegister.Domain.Common.Address", "Address", b1 =>
+                        {
+                            b1.Property<Guid>("CompanyId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<string>("City")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("City");
+
+                            b1.Property<string>("Country")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Country");
+
+                            b1.Property<string>("PostalCode")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("PostalCode");
+
+                            b1.Property<string>("Street")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Street");
+
+                            b1.Property<string>("Surburb")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Surburb");
+
+                            b1.HasKey("CompanyId");
+
+                            b1.ToTable("Companies");
+
+                            b1.WithOwner()
+                                .HasForeignKey("CompanyId");
+                        });
+
+                    b.OwnsMany("ShareRegister.Domain.Common.TelephoneNumber", "TelephoneNumbers", b1 =>
+                        {
+                            b1.Property<Guid>("CompanyId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<int>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("int");
+
+                            SqlServerPropertyBuilderExtensions.UseIdentityColumn(b1.Property<int>("Id"));
+
+                            b1.Property<int>("TelephoneNumberType")
+                                .HasColumnType("int");
+
+                            b1.Property<string>("Value")
+                                .HasColumnType("nvarchar(max)");
+
+                            b1.HasKey("CompanyId", "Id");
+
+                            b1.ToTable("Companies_TelephoneNumbers");
+
+                            b1.WithOwner()
+                                .HasForeignKey("CompanyId");
+                        });
+
+                    b.OwnsOne("ShareRegister.Domain.Common.Email", "Email", b1 =>
+                        {
+                            b1.Property<Guid>("CompanyId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<string>("Value")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Email");
+
+                            b1.HasKey("CompanyId");
+
+                            b1.ToTable("Companies");
+
+                            b1.WithOwner()
+                                .HasForeignKey("CompanyId");
+                        });
+
+                    b.Navigation("Address");
+
+                    b.Navigation("Email");
+
                     b.Navigation("TelephoneNumbers");
                 });
 #pragma warning restore 612, 618

@@ -8,12 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ShareRegister.Data.Configurations;
-internal class TelephoneNumberConfiguration : IEntityTypeConfiguration<TelephoneNumber>
-{
-    public void Configure(EntityTypeBuilder<TelephoneNumber> builder)
-    {
-        builder.HasKey(t => t.Id);
-        builder.Property(t => t.Id)
-            .ValueGeneratedNever();        
-    }
-}
+//internal class TelephoneNumberConfiguration : IEntityTypeConfiguration<TelephoneNumber>
+//{
+//    public void Configure(EntityTypeBuilder<TelephoneNumber> builder)
+//    {
+//        builder.HasKey(t => t.Id);
+//        builder.Property(t => t.Id)
+//            .ValueGeneratedNever();        
+//    }
+//}

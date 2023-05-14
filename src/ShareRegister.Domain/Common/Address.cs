@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 namespace ShareRegister.Domain.Common;
 public class Address
 {
-    public Guid Id { get; private set; }
+    //public Guid Id { get; private set; }
     public string Street { get; private set; }
     public string Surburb { get; private set; }
     public string City { get; private set; }
@@ -19,7 +19,7 @@ public class Address
         string country,
         string postalCode)
     {
-        Id = Guid.NewGuid();
+        //Id = Guid.NewGuid();
         this.Street = street;
         this.Surburb = surburb;
         this.City = city;

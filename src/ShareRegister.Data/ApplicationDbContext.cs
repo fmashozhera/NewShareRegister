@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ShareRegister.Data.Configurations;
 using ShareRegister.Domain.Common;
 using ShareRegister.Domain.IntialPublicOffer;
 using System.Reflection.Metadata;
@@ -8,7 +9,7 @@ namespace ShareRegister.Data
     public class ApplicationDbContext : DbContext
     {
         public DbSet<Company> Companies { get; set; }
-        public DbSet<Address> Addresses { get; set; }
+        //public DbSet<Address> Addresses { get; set; }
         public DbSet<Bank> Banks { get; set; }
         //public DbSet<BankBranch> BankBranches { get; set; }
         //public DbSet<BankAccount> BankAccounts { get; set; }
@@ -33,9 +34,8 @@ namespace ShareRegister.Data
 
         private void ConfigureCommonRelations(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Company>()
-                .HasOne<Address>(t => t.Address);
-                
+            modelBuilder.ApplyConfiguration(new CompanyConfiguration());
+            modelBuilder.ApplyConfiguration(new BankConfiguration());
         }
     }
 }

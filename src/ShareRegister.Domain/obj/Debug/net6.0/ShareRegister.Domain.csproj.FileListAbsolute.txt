@@ -10,3 +10,15 @@ C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Domain\obj\Deb
 C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Domain\obj\Debug\net6.0\refint\ShareRegister.Domain.dll
 C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Domain\obj\Debug\net6.0\ShareRegister.Domain.pdb
 C:\Users\fungai\source\repos\ShareReg\ShareRegister\ShareRegister.Domain\obj\Debug\net6.0\ref\ShareRegister.Domain.dll
+C:\Repos\personal\NewShareRegister\src\ShareRegister.Domain\bin\Debug\net6.0\ShareRegister.Domain.deps.json
+C:\Repos\personal\NewShareRegister\src\ShareRegister.Domain\bin\Debug\net6.0\ShareRegister.Domain.dll
+C:\Repos\personal\NewShareRegister\src\ShareRegister.Domain\bin\Debug\net6.0\ShareRegister.Domain.pdb
+C:\Repos\personal\NewShareRegister\src\ShareRegister.Domain\obj\Debug\net6.0\ShareRegister.Domain.csproj.AssemblyReference.cache
+C:\Repos\personal\NewShareRegister\src\ShareRegister.Domain\obj\Debug\net6.0\ShareRegister.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\personal\NewShareRegister\src\ShareRegister.Domain\obj\Debug\net6.0\ShareRegister.Domain.AssemblyInfoInputs.cache
+C:\Repos\personal\NewShareRegister\src\ShareRegister.Domain\obj\Debug\net6.0\ShareRegister.Domain.AssemblyInfo.cs
+C:\Repos\personal\NewShareRegister\src\ShareRegister.Domain\obj\Debug\net6.0\ShareRegister.Domain.csproj.CoreCompileInputs.cache
+C:\Repos\personal\NewShareRegister\src\ShareRegister.Domain\obj\Debug\net6.0\ShareRegister.Domain.dll
+C:\Repos\personal\NewShareRegister\src\ShareRegister.Domain\obj\Debug\net6.0\refint\ShareRegister.Domain.dll
+C:\Repos\personal\NewShareRegister\src\ShareRegister.Domain\obj\Debug\net6.0\ShareRegister.Domain.pdb
+C:\Repos\personal\NewShareRegister\src\ShareRegister.Domain\obj\Debug\net6.0\ref\ShareRegister.Domain.dll

@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ShareRegister.Application\ShareRegister.Application.csproj" />
     <ProjectReference Include="..\ShareRegister.Domain\ShareRegister.Domain.csproj" />
   </ItemGroup>
 
