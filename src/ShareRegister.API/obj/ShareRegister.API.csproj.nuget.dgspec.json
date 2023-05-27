@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.API\\ShareRegister.API.csproj": {}
+    "C:\\repos\\NewShareRegister\\src\\ShareRegister.API\\ShareRegister.API.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.API\\ShareRegister.API.csproj": {
+    "C:\\repos\\NewShareRegister\\src\\ShareRegister.API\\ShareRegister.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.API\\ShareRegister.API.csproj",
+        "projectUniqueName": "C:\\repos\\NewShareRegister\\src\\ShareRegister.API\\ShareRegister.API.csproj",
         "projectName": "ShareRegister.API",
-        "projectPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.API\\ShareRegister.API.csproj",
+        "projectPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.API\\ShareRegister.API.csproj",
         "packagesPath": "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.API\\obj\\",
+        "outputPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fungai.mashozhera\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,20 +22,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj": {
-                "projectPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj"
+              "C:\\repos\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj": {
+                "projectPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj"
               },
-              "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Data\\ShareRegister.Data.csproj": {
-                "projectPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Data\\ShareRegister.Data.csproj"
+              "C:\\repos\\NewShareRegister\\src\\ShareRegister.Data\\ShareRegister.Data.csproj": {
+                "projectPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Data\\ShareRegister.Data.csproj"
               },
-              "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj": {
-                "projectPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj"
+              "C:\\repos\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj": {
+                "projectPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj"
               }
             }
           }
@@ -88,18 +89,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj": {
+    "C:\\repos\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj",
+        "projectUniqueName": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj",
         "projectName": "ShareRegister.Application",
-        "projectPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj",
+        "projectPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj",
         "packagesPath": "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Application\\obj\\",
+        "outputPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fungai.mashozhera\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,8 +117,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj": {
-                "projectPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj"
+              "C:\\repos\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj": {
+                "projectPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj"
               }
             }
           }
@@ -157,18 +158,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Data\\ShareRegister.Data.csproj": {
+    "C:\\repos\\NewShareRegister\\src\\ShareRegister.Data\\ShareRegister.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Data\\ShareRegister.Data.csproj",
+        "projectUniqueName": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Data\\ShareRegister.Data.csproj",
         "projectName": "ShareRegister.Data",
-        "projectPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Data\\ShareRegister.Data.csproj",
+        "projectPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Data\\ShareRegister.Data.csproj",
         "packagesPath": "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Data\\obj\\",
+        "outputPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fungai.mashozhera\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -185,11 +186,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj": {
-                "projectPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj"
+              "C:\\repos\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj": {
+                "projectPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj"
               },
-              "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj": {
-                "projectPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj"
+              "C:\\repos\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj": {
+                "projectPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj"
               }
             }
           }
@@ -241,18 +242,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj": {
+    "C:\\repos\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj",
+        "projectUniqueName": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj",
         "projectName": "ShareRegister.Domain",
-        "projectPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj",
+        "projectPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj",
         "packagesPath": "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Domain\\obj\\",
+        "outputPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fungai.mashozhera\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -302,7 +303,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

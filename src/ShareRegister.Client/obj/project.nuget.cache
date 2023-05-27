@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TzN4OcnNVnpqiVem+0iRyYpkstXBsfuSFZib49SlKntipySn7ZyksJjZe2j8SX8IDIM8VtadQt8Ska7JwLL1zA==",
+  "dgSpecHash": "594mtghRPV2dvXo0aCW9hjpq/Wd8GwoLmra/tDJWWkfSfYp82kqD/wvU9oZLc1ToN6QRSOBsRj5Orts6MEc/hw==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Client\\ShareRegister.Client.csproj",
+  "projectFilePath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Client\\ShareRegister.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.16\\microsoft.aspnetcore.authorization.6.0.16.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.16\\microsoft.aspnetcore.components.6.0.16.nupkg.sha512",
@@ -33,7 +33,7 @@
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.15\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.15.nupkg.sha512"
+    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.16\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.16.nupkg.sha512"
   ],
   "logs": []
 }

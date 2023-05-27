@@ -1767,11 +1767,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Client\\ShareRegister.Client.csproj",
+      "projectUniqueName": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Client\\ShareRegister.Client.csproj",
       "projectName": "ShareRegister.Client",
-      "projectPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Client\\ShareRegister.Client.csproj",
+      "projectPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Client\\ShareRegister.Client.csproj",
       "packagesPath": "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Client\\obj\\",
+      "outputPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fungai.mashozhera\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1824,7 +1824,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[6.0.15, 6.0.15]"
+            "version": "[6.0.16, 6.0.16]"
           }
         ],
         "frameworkReferences": {
@@ -1832,7 +1832,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

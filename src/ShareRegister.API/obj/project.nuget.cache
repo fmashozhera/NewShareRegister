@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rbJi9yZkQTo79qQechVSBtx5/NJYTb7Fsx97kQ6XE+GUwS1OB0k/4AVeUOcnfS1i4MZMgq8rn8VHj1QPq6J0ug==",
+  "dgSpecHash": "ESvdWDxhOTyRGzHcl6j/QMpbHvtoKrY1DUBug/Qt4M/pabx1gDAuoNJLfI1JT30Z1OFleXh1FBVmLAi5MiLhUQ==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.API\\ShareRegister.API.csproj",
+  "projectFilePath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.API\\ShareRegister.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

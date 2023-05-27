@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4pFNrqhNBLuEKb7LrR+qRebUewY089i/AkjCCyTLD2BPaY7ggTchOAdVUlTJjA6SmLan5p1hH023vXq0nlK4EQ==",
+  "dgSpecHash": "GIaxRLLY8nUAyy3BCiQsclJeaxTRNYWb9CaqnLY6Dzek5Frji24+cBW0xLesCHp+PTaXoGcC72kTdO2Goca27g==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj",
+  "projectFilePath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\fluentresults\\3.15.2\\fluentresults.3.15.2.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",

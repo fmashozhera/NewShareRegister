@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LstvlMnBIkUdl2tsReTHHqxL8XmtCdjNrCEuJzFW9T43yBMGip3y8rg3aka39wJzcJk6Y3xuoEG/IdUwj7oeLw==",
+  "dgSpecHash": "KJAhXcs2jIfVFjMuNxUOHTfbEoe9pJdAHY79qlkYR6Ro3s6q0FBdRCAig7LoVT83aMqLHXqyhh3T8+MyN71pmg==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj",
+  "projectFilePath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Application\\ShareRegister.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\fluentresults\\3.15.2\\fluentresults.3.15.2.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",

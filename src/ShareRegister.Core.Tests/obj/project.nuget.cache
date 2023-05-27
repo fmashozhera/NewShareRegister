@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K1eRkS/txdOjc/qPawu7EPn1NScxVIheexx3gjaV9qlnctPsKZoJEz6W2pOxCdOahBS5ll1j89NB4lKdXGSJLA==",
+  "dgSpecHash": "K4AEE3IxrUySrAIvV2+Re/zZY+0plQA0vbyYjKS0XcOZxeNfZfKhvfQMtsgIfgHOrx1i0WLP4bvByv/X0r7Hiw==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Core.Tests\\ShareRegister.Core.Tests.csproj",
+  "projectFilePath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Core.Tests\\ShareRegister.Core.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\fluentassertions\\6.2.0\\fluentassertions.6.2.0.nupkg.sha512",
