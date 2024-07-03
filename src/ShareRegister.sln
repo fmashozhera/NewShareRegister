@@ -28,7 +28,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShareRegister.API", "ShareR
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{492232A9-1AB3-4DF7-A3C2-69B74DCCDA5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareRegister.Core.Tests", "ShareRegister.Core.Tests\ShareRegister.Core.Tests.csproj", "{7FDA3722-0388-4E32-AB6B-A26A179AF1D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShareRegister.Core.Tests", "ShareRegister.Core.Tests\ShareRegister.Core.Tests.csproj", "{7FDA3722-0388-4E32-AB6B-A26A179AF1D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShareRegister.Application.Tests", "ShareRegister.Application.Tests\ShareRegister.Application.Tests.csproj", "{CAE72414-89AE-40F6-955C-137BBDC6EC9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareRegister.Tests.CommonHelpers", "ShareRegister.Tests.Common\ShareRegister.Tests.CommonHelpers.csproj", "{51B69974-60B7-4D6E-A61F-0B1ADC56CF97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +64,14 @@ Global
 		{7FDA3722-0388-4E32-AB6B-A26A179AF1D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FDA3722-0388-4E32-AB6B-A26A179AF1D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FDA3722-0388-4E32-AB6B-A26A179AF1D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAE72414-89AE-40F6-955C-137BBDC6EC9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE72414-89AE-40F6-955C-137BBDC6EC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE72414-89AE-40F6-955C-137BBDC6EC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE72414-89AE-40F6-955C-137BBDC6EC9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51B69974-60B7-4D6E-A61F-0B1ADC56CF97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B69974-60B7-4D6E-A61F-0B1ADC56CF97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B69974-60B7-4D6E-A61F-0B1ADC56CF97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B69974-60B7-4D6E-A61F-0B1ADC56CF97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +83,8 @@ Global
 		{52D9ED89-B6B7-45BB-A858-D3958212ACB9} = {AF7A7E09-76E8-4487-A682-4C5C97EFE2A1}
 		{F8F2CF47-8D13-4A01-B4BC-649E86356EDA} = {AF7A7E09-76E8-4487-A682-4C5C97EFE2A1}
 		{7FDA3722-0388-4E32-AB6B-A26A179AF1D0} = {492232A9-1AB3-4DF7-A3C2-69B74DCCDA5B}
+		{CAE72414-89AE-40F6-955C-137BBDC6EC9B} = {492232A9-1AB3-4DF7-A3C2-69B74DCCDA5B}
+		{51B69974-60B7-4D6E-A61F-0B1ADC56CF97} = {492232A9-1AB3-4DF7-A3C2-69B74DCCDA5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA653B7F-6ECD-4096-8B8E-6351BB59640A}

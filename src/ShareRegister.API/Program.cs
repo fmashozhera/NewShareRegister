@@ -1,10 +1,18 @@
 using Microsoft.EntityFrameworkCore;
-using ShareRegister.Application.Interfaces.Common;
+using Serilog;
+using ShareRegister.API.AppConfigurationExtensions;
 using ShareRegister.Data;
-using ShareRegister.Data.Common;
-using ShareRegister.Domain.Common;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .CreateLogger();
+
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger);
+Serilog.Log.Logger = logger;
+logger.Information("Starting Share Register API...");
 
 // Add services to the container.
 
@@ -16,17 +24,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("ShareRegister"));
 });
-builder.Services.AddScoped<IRepository<Company>, Repository<Company>>();
-builder.Services.AddScoped<IRepository<Address>, Repository<Address>>();
-builder.Services.AddScoped<IUnitOfWork, UnitOfWOrk>();
-builder.Services.AddMediatR((config) => {
-    config.RegisterServicesFromAssembly(typeof(ICommand).Assembly);
-});
 
-void action(MediatRServiceConfiguration obj)
-{
-    throw new NotImplementedException();
-}
+builder.Services.AddMediator();
+builder.Services.AddDependencyInjectionModules();
+builder.Services.AddAutoMapperConfigs();    
 
 var app = builder.Build();
 
@@ -44,3 +45,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+logger.Information("Share Register API started!");

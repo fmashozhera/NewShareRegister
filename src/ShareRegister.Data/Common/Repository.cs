@@ -1,16 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ShareRegister.Application.Interfaces.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+using ShareRegister.Data.Specifications;
+using ShareRegister.Domain.Common.Interfaces;
 
 namespace ShareRegister.Data.Common;
 public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
 {
-    private readonly ApplicationDbContext _context;
+    protected readonly ApplicationDbContext _context;
 
     public Repository(ApplicationDbContext context)
     {
@@ -22,23 +19,39 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
         await _context.Set<TEntity>().AddAsync(entity);
     }
 
-    public void DeleteAsync(TEntity entity)
+    public void AddRangeAsync(IEnumerable<TEntity> entities)
+    {
+        _context.Set<TEntity>().AddRangeAsync(entities);
+    }
+
+    public IEnumerable<TEntity> Find(ISpecification<TEntity> specification = null)
+    {
+        return ApplySpecification(specification);
+    }
+
+    public TEntity GetById(Guid id)
+    {
+        return _context.Set<TEntity>().Find(id);
+    }
+
+    public void Remove(TEntity entity)
     {
         _context.Set<TEntity>().Remove(entity);
     }
 
-    public async Task<List<TEntity>> FindAll(Expression<Func<TEntity, bool>> query)
+    public void RemoveRange(IEnumerable<TEntity> entities)
     {
-        return await _context.Set<TEntity>().Where(query).ToListAsync();       
+        _context.Set<TEntity>().RemoveRange(entities);
     }
 
-    public async Task<List<TEntity>> GetAll()
+    public void Update(TEntity entity)
     {
-        return await _context.Set<TEntity>().ToListAsync();
+        _context.Set<TEntity>().Attach(entity);
+        _context.Entry(entity).State = EntityState.Modified;
     }
 
-    public async Task<TEntity> GetById(Guid id)
+    protected IQueryable<TEntity> ApplySpecification(ISpecification<TEntity> spec)
     {
-        return await _context.Set<TEntity>().FindAsync(id);
+        return SpecificationEvaluator.GetQuery(_context.Set<TEntity>().AsQueryable(), spec);
     }
 }

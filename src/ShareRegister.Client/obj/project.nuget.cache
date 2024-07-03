@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TzN4OcnNVnpqiVem+0iRyYpkstXBsfuSFZib49SlKntipySn7ZyksJjZe2j8SX8IDIM8VtadQt8Ska7JwLL1zA==",
+  "dgSpecHash": "ZbUbo1dOvjvsl2wDW3+RlJXmKMPSMhyIov48SfmtRGvaEr3a83vNiZegEkS8M8VjzdThVvFpHcVvA3gnuLViAw==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Client\\ShareRegister.Client.csproj",
+  "projectFilePath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Client\\ShareRegister.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.16\\microsoft.aspnetcore.authorization.6.0.16.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.16\\microsoft.aspnetcore.components.6.0.16.nupkg.sha512",
@@ -28,12 +28,15 @@
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.jsinterop\\6.0.16\\microsoft.jsinterop.6.0.16.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.16\\microsoft.jsinterop.webassembly.6.0.16.nupkg.sha512",
+    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.net.illink.analyzers\\7.0.100-1.23211.1\\microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512",
+    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23211.1\\microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
+    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.5\\microsoft.net.sdk.webassembly.pack.8.0.5.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.15\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.15.nupkg.sha512"
+    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.30\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.30.nupkg.sha512"
   ],
   "logs": []
 }

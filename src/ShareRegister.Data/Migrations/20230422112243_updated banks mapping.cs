@@ -10,30 +10,30 @@ namespace ShareRegister.Data.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "Address_Surburb",
-                table: "Banks",
-                newName: "Surburb");
+            //migrationBuilder.RenameColumn(
+            //    name: "Address_Surburb",
+            //    table: "Banks",
+            //    newName: "Surburb");
 
-            migrationBuilder.RenameColumn(
-                name: "Address_Street",
-                table: "Banks",
-                newName: "Street");
+            //migrationBuilder.RenameColumn(
+            //    name: "Address_Street",
+            //    table: "Banks",
+            //    newName: "Street");
 
-            migrationBuilder.RenameColumn(
-                name: "Address_PostalCode",
-                table: "Banks",
-                newName: "PostalCode");
+            //migrationBuilder.RenameColumn(
+            //    name: "Address_PostalCode",
+            //    table: "Banks",
+            //    newName: "PostalCode");
 
-            migrationBuilder.RenameColumn(
-                name: "Address_Country",
-                table: "Banks",
-                newName: "Country");
+            //migrationBuilder.RenameColumn(
+            //    name: "Address_Country",
+            //    table: "Banks",
+            //    newName: "Country");
 
-            migrationBuilder.RenameColumn(
-                name: "Address_City",
-                table: "Banks",
-                newName: "City");
+            //migrationBuilder.RenameColumn(
+            //    name: "Address_City",
+            //    table: "Banks",
+            //    newName: "City");
         }
 
         /// <inheritdoc />

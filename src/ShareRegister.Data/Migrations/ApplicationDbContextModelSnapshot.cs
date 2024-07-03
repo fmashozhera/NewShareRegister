@@ -17,7 +17,7 @@ namespace ShareRegister.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.5")
+                .HasAnnotation("ProductVersion", "7.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -36,6 +36,15 @@ namespace ShareRegister.Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime>("DateDeleted")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("DeletedById")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("LastModifiedDate")
                         .HasColumnType("datetime2");
 
@@ -53,10 +62,11 @@ namespace ShareRegister.Data.Migrations
             modelBuilder.Entity("ShareRegister.Domain.Common.Company", b =>
                 {
                     b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CompanyCode")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<Guid>("CreatorId")
                         .HasColumnType("uniqueidentifier");
@@ -64,8 +74,17 @@ namespace ShareRegister.Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime>("DateDeleted")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("DeletedById")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("ISIN")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<DateTime>("LastModifiedDate")
                         .HasColumnType("datetime2");
@@ -74,9 +93,17 @@ namespace ShareRegister.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CompanyCode")
+                        .IsUnique()
+                        .HasFilter("[CompanyCode] IS NOT NULL");
+
+                    b.HasIndex("Name")
+                        .IsUnique()
+                        .HasFilter("[Name] IS NOT NULL");
 
                     b.ToTable("Companies");
                 });
@@ -135,13 +162,59 @@ namespace ShareRegister.Data.Migrations
 
                             b1.HasKey("BankId", "Id");
 
-                            b1.ToTable("Banks_TelephoneNumbers");
+                            b1.ToTable("BankTelephoneNumbers", (string)null);
+
+                            b1.WithOwner()
+                                .HasForeignKey("BankId");
+                        });
+
+                    b.OwnsMany("ShareRegister.Domain.Common.BankBranch", "Branches", b1 =>
+                        {
+                            b1.Property<Guid>("BankId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<Guid>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<string>("BranchCode")
+                                .HasColumnType("nvarchar(max)");
+
+                            b1.Property<string>("BranchName")
+                                .HasColumnType("nvarchar(max)");
+
+                            b1.Property<Guid>("CreatorId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<DateTime>("DateCreated")
+                                .HasColumnType("datetime2");
+
+                            b1.Property<DateTime>("DateDeleted")
+                                .HasColumnType("datetime2");
+
+                            b1.Property<Guid>("DeletedById")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<bool>("IsDeleted")
+                                .HasColumnType("bit");
+
+                            b1.Property<DateTime>("LastModifiedDate")
+                                .HasColumnType("datetime2");
+
+                            b1.Property<Guid>("ModifierId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.HasKey("BankId", "Id");
+
+                            b1.ToTable("BankBranches", (string)null);
 
                             b1.WithOwner()
                                 .HasForeignKey("BankId");
                         });
 
                     b.Navigation("Address");
+
+                    b.Navigation("Branches");
 
                     b.Navigation("TelephoneNumbers");
                 });
@@ -200,7 +273,7 @@ namespace ShareRegister.Data.Migrations
 
                             b1.HasKey("CompanyId", "Id");
 
-                            b1.ToTable("Companies_TelephoneNumbers");
+                            b1.ToTable("CompanyTelephoneNumbers", (string)null);
 
                             b1.WithOwner()
                                 .HasForeignKey("CompanyId");

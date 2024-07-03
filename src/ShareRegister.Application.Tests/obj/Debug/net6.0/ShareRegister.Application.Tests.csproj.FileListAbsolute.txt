@@ -1,0 +1,5 @@
+C:\repos\NewShareRegister\src\ShareRegister.Application.Tests\obj\Debug\net6.0\ShareRegister.Application.Tests.csproj.AssemblyReference.cache
+C:\repos\NewShareRegister\src\ShareRegister.Application.Tests\obj\Debug\net6.0\ShareRegister.Application.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\NewShareRegister\src\ShareRegister.Application.Tests\obj\Debug\net6.0\ShareRegister.Application.Tests.AssemblyInfoInputs.cache
+C:\repos\NewShareRegister\src\ShareRegister.Application.Tests\obj\Debug\net6.0\ShareRegister.Application.Tests.AssemblyInfo.cs
+C:\repos\NewShareRegister\src\ShareRegister.Application.Tests\obj\Debug\net6.0\ShareRegister.Application.Tests.csproj.CoreCompileInputs.cache

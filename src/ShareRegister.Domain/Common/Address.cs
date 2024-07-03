@@ -1,25 +1,19 @@
 ﻿using FluentResults;
 using ShareRegister.Domain.Common.Errors;
-using System.Runtime.CompilerServices;
 
 namespace ShareRegister.Domain.Common;
-public class Address
+public record Address
 {
-    //public Guid Id { get; private set; }
     public string Street { get; private set; }
     public string Surburb { get; private set; }
     public string City { get; private set; }
     public string Country { get; private set; }
     public string PostalCode { get; private set; }
 
-    private Address(
-        string street,
-        string surburb,
-        string city,
-        string country,
-        string postalCode)
-    {
-        //Id = Guid.NewGuid();
+    [assembly: InternalsVisibleTo("ShareRegister.Application.Tests")]
+    [assembly: InternalsVisibleTo("ShareRegister.Core.Tests.StepDefinitions")]
+    internal Address(string street, string surburb, string city, string country, string postalCode)
+    {    
         this.Street = street;
         this.Surburb = surburb;
         this.City = city;
@@ -27,45 +21,18 @@ public class Address
         this.PostalCode = postalCode;
     }
 
-    public static Result<Address> Create(string street,
-        string surburb,
-        string city,
-        string country,
-        string postalCode)
+    public static Result<Address> Create(string street, string surburb, string city, string country, string postalCode)
     {
-        Result validationResult = ValidateAddressInput(street, surburb, city, country);
-
-        if (validationResult.IsFailed)
-        {
-            validationResult.Reasons.Add(new InvalidAddressError());
-            return validationResult;
-        }
-
-        var Address = new Address(street, surburb, city, country, postalCode);
+        Result<Address> Address = SetAddress(street, surburb, city, country, postalCode);
         return Address;
     }
 
-    public Result<Address> Update(string street,
-        string surburb,
-        string city,
-        string country,
-        string postalCode)
-    {
-        Result validationResult = ValidateAddressInput(street, surburb, city, country);
-
-        if (validationResult.IsFailed)
-        {
-            validationResult.Reasons.Add(new InvalidAddressError());
-            return validationResult;
-        }
-
-        this.Street = street;
-        this.Surburb = surburb;
-        this.City = city;
-        this.Country = country;
-        this.PostalCode = postalCode;
-        return this;
+    public Result<Address> Update(string street, string surburb, string city, string country, string postalCode)
+    {       
+        Result<Address> Address = SetAddress(street, surburb, city, country, postalCode);
+        return Address;
     }
+
     private static Result ValidateAddressInput(string street, string surburb, string city, string country)
     {
         var validationResult = new Result();
@@ -79,5 +46,19 @@ public class Address
             validationResult.Reasons.Add(new RequiredError("Country"));
 
         return validationResult;
+    }
+
+    private static Result<Address> SetAddress(string street, string surburb, string city, string country, string postalCode)
+    {
+        Result validationResult = ValidateAddressInput(street, surburb, city, country);
+
+        if (validationResult.IsFailed)
+        {
+            validationResult.Reasons.Add(new InvalidAddressError());
+            return validationResult;
+        }
+
+        var Address = new Address(street, surburb, city, country, postalCode);
+        return Address;
     }
 }

@@ -159,19 +159,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\": {}
+    "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj",
+      "projectUniqueName": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj",
       "projectName": "ShareRegister.Domain",
-      "projectPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj",
+      "projectPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Domain\\ShareRegister.Domain.csproj",
       "packagesPath": "C:\\Users\\fungai.mashozhera\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\personal\\NewShareRegister\\src\\ShareRegister.Domain\\obj\\",
+      "outputPath": "C:\\repos\\NewShareRegister\\src\\ShareRegister.Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
+        "C:\\repos\\NuGet.Config",
         "C:\\Users\\fungai.mashozhera\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -179,6 +185,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -191,6 +198,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -218,7 +230,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
       }
     }
   }

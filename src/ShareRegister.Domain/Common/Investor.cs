@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShareRegister.Domain.Common;
+﻿namespace ShareRegister.Domain.Common;
 public abstract class  Investor : AuditableEntity
 {
-    public string IdentificationNumber { get; set; }
-    public IdentificationType IdentificationType { get; set; }
-    public ICollection<BankAccount> BankAccounts { get; set; }
+    public string IdentificationNumber { get; protected set; }
+    public IdentificationType IdentificationType { get; protected set; }
+    public ICollection<BankAccount> BankAccounts { get; protected set; } = new List<BankAccount>();
+    public Address Address { get; protected set; }
+    public Email Email { get; protected set; }
+    public TelephoneNumber TelephoneNumber { get;protected set; }
 }

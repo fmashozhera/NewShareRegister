@@ -10,10 +10,10 @@ namespace ShareRegister.Data.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "Email_Value",
-                table: "Companies",
-                newName: "Email");
+            //migrationBuilder.RenameColumn(
+            //    name: "Email_Value",
+            //    table: "Companies",
+            //    newName: "Email");
         }
 
         /// <inheritdoc />

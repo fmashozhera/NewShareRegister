@@ -9,7 +9,10 @@ internal class CompanyConfiguration : IEntityTypeConfiguration<Company>
     {
         builder.HasKey(t => t.Id);
         builder.Property(p => p.Id)
-            .ValueGeneratedNever();
+            .ValueGeneratedOnAdd();
+
+        builder.HasIndex(p => p.CompanyCode).IsUnique();
+        builder.HasIndex(p=>p.Name).IsUnique();
         
         builder.OwnsOne(p => p.Address, p =>
         {
@@ -19,9 +22,11 @@ internal class CompanyConfiguration : IEntityTypeConfiguration<Company>
             p.Property(p => p.Country).HasColumnName("Country");
             p.Property(p => p.PostalCode).HasColumnName("PostalCode");
         });
+        
 
-        builder.OwnsMany<TelephoneNumber>(t => t.TelephoneNumbers);
+        builder.OwnsMany<TelephoneNumber>(t => t.TelephoneNumbers).ToTable("CompanyTelephoneNumbers");
         builder.OwnsOne(p => p.Email, p => { p.Property(p => p.Value).HasColumnName("Email"); });
+            
 
         builder.Metadata.FindNavigation(nameof(Company.Address))
             .SetPropertyAccessMode(PropertyAccessMode.Field);

@@ -108,7 +108,7 @@ namespace ShareRegister.Data.Migrations
                 nullable: true);
 
             migrationBuilder.CreateTable(
-                name: "Banks_TelephoneNumbers",
+                name: "BanksTelephoneNumbers",
                 columns: table => new
                 {
                     BankId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -129,7 +129,7 @@ namespace ShareRegister.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Companies_TelephoneNumbers",
+                name: "CompaniesTelephoneNumbers",
                 columns: table => new
                 {
                     CompanyId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),

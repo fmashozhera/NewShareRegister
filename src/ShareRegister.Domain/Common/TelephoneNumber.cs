@@ -8,7 +8,14 @@ public record TelephoneNumber
     public string Value { get; private set; }
     public TelephoneNumberType TelephoneNumberType { get; private set; }
 
-    private TelephoneNumber(string telephoneNumber,TelephoneNumberType type)
+    [assembly: InternalsVisibleTo("ShareRegister.Data")]
+    internal TelephoneNumber()
+    {
+            
+    }
+    [assembly: InternalsVisibleTo("ShareRegister.Application.Tests")]
+    [assembly: InternalsVisibleTo("ShareRegister.Core.Tests.StepDefinitions")]
+    internal TelephoneNumber(string telephoneNumber,TelephoneNumberType type)
     {
         this.Value = telephoneNumber;
         this.TelephoneNumberType = type;
@@ -32,5 +39,25 @@ public record TelephoneNumber
         var mapper = @"^" + Regex.Escape("+") + @"?\d*$";
         var isMatch = Regex.Match(telephoneNumber, mapper).Success;
         return isMatch;
+    }
+
+    public static Result<IEnumerable<TelephoneNumber>> CreateTelephoneNumbers(IDictionary<string, TelephoneNumberType> telephoneNumbers)
+    {
+        List<TelephoneNumber> createdTelephoneNumbers = new List<TelephoneNumber>();
+        Result<IEnumerable<TelephoneNumber>> telephoneNumbersCreationResult = new Result<IEnumerable<TelephoneNumber>>();
+        foreach (KeyValuePair<string, TelephoneNumberType> telephoneNumber in telephoneNumbers)
+        {
+            Result<TelephoneNumber> telephoneNumberCreationResult = TelephoneNumber.Create(telephoneNumber.Key.ToString(), (TelephoneNumberType)telephoneNumber.Value);
+            if (telephoneNumberCreationResult.IsSuccess)
+            {
+                createdTelephoneNumbers.Add(telephoneNumberCreationResult.Value);
+            }
+            else
+            {
+                telephoneNumbersCreationResult.Reasons.AddRange(telephoneNumberCreationResult.Reasons);
+            }
+        }
+
+        return telephoneNumbersCreationResult.IsSuccess ? createdTelephoneNumbers : telephoneNumbersCreationResult;
     }
 }

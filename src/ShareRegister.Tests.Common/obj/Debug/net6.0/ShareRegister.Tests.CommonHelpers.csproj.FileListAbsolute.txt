@@ -1,0 +1,15 @@
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\bin\Debug\net6.0\ShareRegister.Tests.CommonHelpers.deps.json
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\bin\Debug\net6.0\ShareRegister.Tests.CommonHelpers.dll
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\bin\Debug\net6.0\ShareRegister.Tests.CommonHelpers.pdb
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\bin\Debug\net6.0\ShareRegister.Domain.dll
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\bin\Debug\net6.0\ShareRegister.Domain.pdb
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\obj\Debug\net6.0\ShareRegister.Tests.CommonHelpers.csproj.AssemblyReference.cache
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\obj\Debug\net6.0\ShareRegister.Tests.CommonHelpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\obj\Debug\net6.0\ShareRegister.Tests.CommonHelpers.AssemblyInfoInputs.cache
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\obj\Debug\net6.0\ShareRegister.Tests.CommonHelpers.AssemblyInfo.cs
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\obj\Debug\net6.0\ShareRegister.Tests.CommonHelpers.csproj.CoreCompileInputs.cache
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\obj\Debug\net6.0\ShareRegister.Tests.CommonHelpers.csproj.CopyComplete
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\obj\Debug\net6.0\ShareRegister.Tests.CommonHelpers.dll
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\obj\Debug\net6.0\refint\ShareRegister.Tests.CommonHelpers.dll
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\obj\Debug\net6.0\ShareRegister.Tests.CommonHelpers.pdb
+C:\repos\NewShareRegister\src\ShareRegister.Tests.Common\obj\Debug\net6.0\ref\ShareRegister.Tests.CommonHelpers.dll

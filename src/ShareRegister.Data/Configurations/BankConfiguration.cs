@@ -11,6 +11,9 @@ public class BankConfiguration : IEntityTypeConfiguration<Bank>
         builder.Property(x => x.Id)
         .ValueGeneratedNever();
 
+        builder.OwnsMany(t => t.Branches)
+            .ToTable("BankBranches");
+
         builder.OwnsOne(p => p.Address, p =>
            {
                p.Property(p => p.Street).HasColumnName("Street");
@@ -20,6 +23,7 @@ public class BankConfiguration : IEntityTypeConfiguration<Bank>
                p.Property(p => p.PostalCode).HasColumnName("PostalCode");
            });
 
-        builder.OwnsMany(t => t.TelephoneNumbers);
+        builder.OwnsMany(t => t.TelephoneNumbers)
+            .ToTable("BankTelephoneNumbers");
     }
 }
